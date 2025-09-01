@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>::before and ::after Pseudo-Elements Examples</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  .example {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+
+  /* Decorative Icon with ::before */
+  .icon::before {
+    content: "🔥 ";
+    color: #ff4500;
+    font-size: 1.5rem;
+  }
+
+  /* Decorative Line with ::before */
+  .line::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 10px;
+  }
+
+  /* Adding Quote Marks with ::before and ::after */
+  .quote::before {
+    content: "“";
+    font-size: 2rem;
+    color: #888;
+    position: relative;
+    top: 5px;
+  }
+  .quote::after {
+    content: "”";
+    font-size: 2rem;
+    color: #888;
+    position: relative;
+    top: 5px;
+  }
+
+  /* Button with Icon using ::before */
+  .button::before {
+    content: "✔️ ";
+    margin-right: 5px;
+    color: #4CAF50;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Tooltip with ::after */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .tooltip::after {
+    content: "This is a tooltip";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .tooltip:hover::after {
+    opacity: 1;
+  }
+
+  /* Clearfix with ::after */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .float-left {
+    float: left;
+    width: 45%;
+    background-color: #a9d4ff;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  /* Decorative Tag with ::before and ::after */
+  .tag {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .tag::before, .tag::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #FF5722;
+  }
+  .tag::before {
+    top: -4px;
+    left: -4px;
+    transform: rotate(45deg);
+  }
+  .tag::after {
+    bottom: -4px;
+    right: -4px;
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+
+<h2>::before and ::after Pseudo-Elements Examples</h2>
+
+<div class="example icon">
+  Decorative Icon with ::before
+</div>
+
+<div class="example line">
+  Decorative Line with ::before
+</div>
+
+<div class="example quote">
+  Adding Quote Marks with ::before and ::after
+</div>
+
+<div class="example">
+  <button class="button">Submit</button>
+  <p>Button with Icon using ::before</p>
+</div>
+
+<div class="example tooltip">
+  Hover Over Me
+  <p>Tooltip with ::after</p>
+</div>
+
+<div class="example clearfix">
+  <div class="float-left">Floating Element 1</div>
+  <div class="float-left">Floating Element 2</div>
+  <p>Clearfix using ::after</p>
+</div>
+
+<div class="example tag">
+  Featured
+  <p>Decorative Tag with ::before and ::after</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Example</title>
+   
+        <!-- title icon -->
+        <link rel="icon" href="ju.ico">
+</head>
+<body>
+
+    <!-- Link to the bookmark to go to any section -->
+    <a href="#skill">My skills</a>
+
+    <!-- Some content to scroll through -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+    <p>Integer ac felis a nisi facilisis viverra nec a ligula. Nullam sit amet fermentum dolor.</p>
+    <p>Donec aliquam felis at lectus condimentum, sed accumsan metus aliquam.</p>
+    <p>Aliquam ut urna eu nisi venenatis porttitor. Proin non est id massa venenatis tincidunt.</p>
+    <p>Ut efficitur eros id orci fermentum, id dictum magna malesuada.</p>
+    <p>Morbi consectetur justo in leo laoreet lacinia. Sed et enim sed lorem elementum dignissim.</p>
+
+    <!-- Target of the bookmark -->
+    <h2 id="skill">My skills are given below</h2>
+    <p>Here is the content after jumping to the bookmark.</p>
+
+  
+    <!-- table with 2 span -->
+    <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill Smith</td>
+        </tr>
+        <tr>
+          <th 
+      rowspan="2"
+      >Phone</th>
+          <td>555-77854</td>
+        </tr>
+        <tr>
+          <td>555-77854</td>
+        </tr>
+      </table>
+
+
+      <!-- description list. -->
+      <dl>
+        <dt>Coffee</dt>
+        
+      <dd>
+      - black hot drink
+      </dd>
+      
+        <dt>Milk</dt>
+        
+      <dd>
+      - white cold drink
+      </dd>
+      
+      </dl>
+
+
+<!--  Define the text inside the <code> element as preformatted text (to preserve spaces and line breaks).
+
+       -->
+     
+        <p>Code example:</p>
+        
+        <pre>
+        <code>var person = {
+          firstName:"John",
+          lastName:"Doe"
+        }</code>
+        </pre>
+        
+
+
+ <!-- Define the character "x" in the equation as a variable. -->
+
+<p>A simple math equation: 
+<var>
+x
+</var>
+ = 3 + 2; </p>
+
+
+ <!-- Add a submit button, and specify that the form should go to "/action_page.php". -->
+
+<form action="CV.html">
+Name: <input type="text" name="name" readonly placeholder="readonly">
+<input type="submit">
+</form>
+
+
+
+<br>
+<!-- In the form below, add an input field that can only contain numbers -->
+<!-- Use the correct input attributes to only allow numbers between 1 and 5. -->
+<form action="CV.html">
+    <label for="rating">your rating</label>
+<input type="number" min="1" max="5" name="rating" placeholder="give your ratings" disabled>
+</form>
+
+</body>
+</html>

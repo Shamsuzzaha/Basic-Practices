@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Transform Examples</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .example {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Transform Examples */
+  .translate:hover {
+    transform: translateX(50px) translateY(20px);
+  }
+  .rotate:hover {
+    transform: rotate(45deg);
+  }
+  .scale:hover {
+    transform: scale(1.5);
+  }
+  .skew:hover {
+    transform: skew(20deg, 10deg);
+  }
+  .rotate-scale:hover {
+    transform: rotate(45deg) scale(1.2);
+  }
+  .translate-rotate:hover {
+    transform: translate(30px, 30px) rotate(30deg);
+  }
+  .scale-skew:hover {
+    transform: scale(1.2) skew(15deg);
+  }
+  .rotateX:hover {
+    transform: perspective(400px) rotateX(45deg);
+  }
+  .rotateY:hover {
+    transform: perspective(400px) rotateY(45deg);
+  }
+  .rotateZ:hover {
+    transform: rotateZ(90deg);
+  }
+</style>
+</head>
+<body>
+
+<h2>CSS Transform Examples</h2>
+
+<div class="example translate">Translate (Hover)</div>
+<div class="example rotate">Rotate (Hover)</div>
+<div class="example scale">Scale (Hover)</div>
+<div class="example skew">Skew (Hover)</div>
+<div class="example rotate-scale">Rotate & Scale (Hover)</div>
+<div class="example translate-rotate">Translate & Rotate (Hover)</div>
+<div class="example scale-skew">Scale & Skew (Hover)</div>
+<div class="example rotateX">3D Rotate X (Hover)</div>
+<div class="example rotateY">3D Rotate Y (Hover)</div>
+<div class="example rotateZ">3D Rotate Z (Hover)</div>
+
+</body>
+</html>
