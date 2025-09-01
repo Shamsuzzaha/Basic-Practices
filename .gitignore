@@ -1,0 +1,88 @@
+# Logs
+logs/
+**/logs/
+*.log
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+**/pids/
+*.pid
+**/*.pid
+*.seed
+**/*.seed
+*.pid.lock
+**/*.pid.lock
+
+# Dependency directories
+node_modules/
+**/node_modules/
+jspm_packages/
+**/jspm_packages/
+
+# Build output
+dist/
+**/dist/
+build/
+**/build/
+.cache/
+**/.cache/
+.next/
+**/.next/
+out/
+**/out/
+coverage/
+**/coverage/
+
+# React specific
+*.DS_Store
+**/*.DS_Store
+*.env.local
+**/*.env.local
+*.env.development.local
+**/*.env.development.local
+*.env.test.local
+**/*.env.test.local
+*.env.production.local
+**/*.env.production.local
+
+# Testing
+coverage/
+**/coverage/
+*.lcov
+**/*.lcov
+
+# Production
+.env
+**/.env
+.env.*.local
+**/.env.*.local
+
+# Misc
+*.swp
+**/*.swp
+*.swo
+**/*.swo
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.iml
+**/*.iml
+
+# Logs for Express.js
+logs/
+**/logs/
+*.log
+**/*.log
+
+# OS generated files
+Thumbs.db
+**/Thumbs.db
+.DS_Store
+**/.DS_Store
