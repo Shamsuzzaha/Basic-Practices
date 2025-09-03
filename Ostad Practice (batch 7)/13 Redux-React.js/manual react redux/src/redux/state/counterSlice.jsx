@@ -13,7 +13,6 @@ export const CounterSlice = createSlice({
             state.count -= 1;
         },
         customValue: (state, action) => {
-            
             state.count = action.payload;
         }
     }
