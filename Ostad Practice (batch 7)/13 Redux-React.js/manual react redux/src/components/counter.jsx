@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {increment, decrement} from '../redux/state/counterSlice.jsx'
+import {increment, decrement, customValue} from '../redux/state/counterSlice.jsx'
 
 const Counter = () => {
     const count = useSelector((state) => state.counter.count);
@@ -17,6 +17,10 @@ const Counter = () => {
                     <div className="mt-3 d-flex gap-3">
                         <button onClick={()=>dispatch(increment())} className={'btn btn-success'}>increase</button>
                         <button onClick={()=>dispatch(decrement())} className={'btn btn-danger'}>decrease</button>
+                    </div>
+                    <div className={'my-3'}>
+                        <input type="number"  />
+                        <button onClick={()=>dispatch(customValue('100'))} className={'btn btn-success ms-2'}>customize value</button>
                     </div>
                 </div>
             </div>
