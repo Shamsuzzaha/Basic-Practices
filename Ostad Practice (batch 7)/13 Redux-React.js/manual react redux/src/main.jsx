@@ -5,7 +5,7 @@ import App from './App.jsx'
 // css and js style
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './assets/style.css'
+import './assets/style.css' //custom css must be after bootstrap
 
 
 import {Provider} from "react-redux";

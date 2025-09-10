@@ -11,7 +11,8 @@ const TodoPage = () => {
                                 <h3>Todo Task Manager</h3>
                             </div>
                             <div className="card-body">
-
+                                <input type="text" className={'form-check'}/>
+                                <button className={'btn btn-success'}>Add Todo</button>
                             </div>
                         </div>
                     </div>
