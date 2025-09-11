@@ -1,4 +1,6 @@
 import React from 'react';
+import CreateTodo from "../components/todo/createTodo.jsx";
+import TodoList from "../components/todo/todoList.jsx";
 
 const TodoPage = () => {
     return (
@@ -11,8 +13,8 @@ const TodoPage = () => {
                                 <h3>Todo Task Manager</h3>
                             </div>
                             <div className="card-body">
-                                <input type="text" className={'form-check'}/>
-                                <button className={'btn btn-success'}>Add Todo</button>
+                                <CreateTodo/>
+                                <TodoList/>
                             </div>
                         </div>
                     </div>
