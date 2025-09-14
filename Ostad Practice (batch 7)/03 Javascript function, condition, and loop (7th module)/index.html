@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script src="script.js"></script>
+
+
+
+
+
+
+    <script>
+        // Save scroll position before the page reloads
+        window.addEventListener("beforeunload", () => {
+          localStorage.setItem("scrollPosition", window.scrollY);
+        });
+      
+        // Restore scroll position when the page loads
+        window.addEventListener("load", () => {
+          const scrollPosition = localStorage.getItem("scrollPosition");
+          if (scrollPosition) {
+            window.scrollTo(0, parseInt(scrollPosition, 10));
+          }
+        });
+      </script>
+      
+</body>
+</html>
