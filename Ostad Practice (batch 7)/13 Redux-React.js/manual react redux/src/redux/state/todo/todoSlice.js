@@ -3,11 +3,10 @@ import {createSlice} from "@reduxjs/toolkit";
 export const todoSlice = createSlice({
     name: "todos",
     initialState: {
-        list:[]
+        list:["hello", "how"]
     },
     reducers:{
         AddTask: (state, action) => {
-            debugger;
             state.list.push(action.payload)
         },
         RemoveTask: (state, action) => {

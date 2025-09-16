@@ -1,6 +1,9 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 const TodoList = () => {
+    const list = useSelector(state => state.todos.list)
+
     return (
         <div>
             <div className="container-fluid">
@@ -16,12 +19,14 @@ const TodoList = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>01</td>
-                                    <td>Game</td>
-                                    <td><button className={'btn btn btn-success'}>Edit</button></td>
+                            {list.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{index}</td>
+                                    <td>{item}</td>
+                                    <td><button  className={'btn btn btn-success'}>Edit</button></td>
                                     <td><button className={'btn btn-danger'}>Remove</button></td>
                                 </tr>
+                            ))}
                             </tbody>
                         </table>
                     </div>
