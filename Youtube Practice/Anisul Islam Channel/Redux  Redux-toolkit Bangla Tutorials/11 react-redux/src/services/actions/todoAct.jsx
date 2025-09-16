@@ -4,9 +4,9 @@ import axios from "axios";
 export const getData = async (dispatch) => {
     dispatch({ type: GET_TODOS_REQUEST });
     try{
-        const data = await axios.get("https://jsonplaceholder.typicode.com/todos")
-        dispatch({type: GET_TODOS_SUCCESS, payload: data})
+        const res = await axios.get("https://jsonplaceholder.typicode.com/todos")
+        dispatch({type: GET_TODOS_SUCCESS, payload: res.data})
     }catch(error){
-        dispatch({type: GET_TODOS_FAILURE, payload: error})
+        dispatch({type: GET_TODOS_FAILURE, payload: error.message})
     }
 }

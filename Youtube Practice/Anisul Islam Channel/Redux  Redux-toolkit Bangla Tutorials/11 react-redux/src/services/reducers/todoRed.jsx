@@ -16,6 +16,7 @@ export const todosReducer = (state = initialState, action) => {
         case GET_TODOS_SUCCESS:
             return {
                 ...state,
+                isLoading: false,
                 todos: action.payload,
             }
         case GET_TODOS_FAILURE:
