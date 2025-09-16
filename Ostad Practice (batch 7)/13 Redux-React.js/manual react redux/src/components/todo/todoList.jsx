@@ -1,5 +1,7 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import {deleteAlert} from "../../feature/deleteAlert.jsx";
+import {editAlert} from "../../feature/editAlert.jsx";
 
 const TodoList = () => {
     const list = useSelector(state => state.todos.list)
@@ -23,8 +25,8 @@ const TodoList = () => {
                                 <tr key={index}>
                                     <td>{index}</td>
                                     <td>{item}</td>
-                                    <td><button  className={'btn btn btn-success'}>Edit</button></td>
-                                    <td><button className={'btn btn-danger'}>Remove</button></td>
+                                    <td><button onClick={()=>editAlert(index, item)}  className={'btn btn btn-success'}>Edit</button></td>
+                                    <td><button onClick={()=>deleteAlert(index)} className={'btn btn-danger'}>Remove</button></td>
                                 </tr>
                             ))}
                             </tbody>
